@@ -16,7 +16,7 @@ public class MarkingQuiz
                 System.out.print(ans[i]);
                 System.out.println();
             int score = 0;
-            int totalScore = 0;
+            int totalScore = 0;	
             int number = 0;
             while(input.hasNext()){
                 number++;
@@ -28,10 +28,9 @@ public class MarkingQuiz
                 for(int i=1; i<marks.length; i++){
                     if(marks[i].equals(ans[i]))score++;
                     //System.out.print(marks[i]);
-                   
                 }
                 //
-                System.out.println(" SCORE: "+score+"/8");
+                System.out.println("  SCORE: "+score+"/8");
                 totalScore+=score;
             }
             System.out.println("Average Score: "+totalScore/number+"/8");
